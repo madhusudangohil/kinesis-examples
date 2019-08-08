@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/madhusudangohil/kinesis-examples#readme",
   "dependencies": {
+    "aws-kcl": "^2.0.0",
     "aws-sdk": "^2.506.0"
   }
 }
