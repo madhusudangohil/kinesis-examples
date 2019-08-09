@@ -1,5 +1,7 @@
 var kcl = require("aws-kcl");
-var logger = require("./logger");
+var l = require("./logger");
+
+var log = l().getLogger("recordProcessor");
 
 /**
  * The record processor must provide three functions:
