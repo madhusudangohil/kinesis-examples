@@ -1,3 +1,5 @@
+const Client = require("./KinesisClient");
+
 class Producer {
   constructor(kinesis, config) {
     this.kinesis = kinesis;
@@ -14,6 +16,12 @@ class Producer {
     };
 
     return this.kinesis.putRecord(recordParams).promise();
+  }
+
+  writeAggregateToStream(users) {
+    const client = new Client(this.config.stream);
+
+    return client.PublishEvents(user);
   }
 }
 
