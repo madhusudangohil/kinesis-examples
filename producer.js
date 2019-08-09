@@ -21,7 +21,7 @@ class Producer {
   writeAggregateToStream(users) {
     const client = new Client(this.config.stream);
 
-    return client.PublishEvents(user);
+    return client.PublishEvents(users);
   }
 }
 
