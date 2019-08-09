@@ -1,5 +1,6 @@
 var kcl = require("aws-kcl");
 var util = require("util");
+var logger = require("./logger");
 
 /**
  * The record processor must provide three functions:
@@ -72,6 +73,7 @@ var recordProcessor = {
       // Note that "data" is a base64-encoded string. Buffer can be used to
       // decode the data into a string.
       data = new Buffer(record.data, "base64").toString();
+      logger.info(data);
 
       // Custom record processing logic ...
     }
