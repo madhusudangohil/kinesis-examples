@@ -72,7 +72,7 @@ var recordProcessor = {
       // Note that "data" is a base64-encoded string. Buffer can be used to
       // decode the data into a string.
       data = new Buffer(record.data, "base64").toString();
-      logger.info(sequenceNumber);
+      logger.info("testing");
 
       // Custom record processing logic ...
     }
