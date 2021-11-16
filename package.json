@@ -19,7 +19,7 @@
   "dependencies": {
     "aws-kcl": "^2.0.0",
     "aws-kinesis-agg": "^4.0.2",
-    "aws-sdk": "^2.506.0",
+    "aws-sdk": "^2.814.0",
     "commander": "~2.6.0",
     "log4js": "^0.6.38"
   }
